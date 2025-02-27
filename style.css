@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+@import url("css/components/container.css");
+@import url("css/components/avatar.css");
+@import url("css/components/button.css");
+@import url("css/components/banner.css");
+@import url("css/components/card.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%), url(../images/background.jpg);
+    padding: 150px 0px;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1 {
+    color: #feb4d5;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.banner h2 {
+    color: #feb4d5;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-bottom: 40px; 
+}
+
+.container {
+    width: 700px;
+    margin: 80px auto; 
+    text-align: center;
+    
+}
+
+.btn-blue {
+  display: inline-block;
+  background: #feb4d5;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-blue:hover {
+  background: #f38fdb;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.card {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin: 10px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    color:#feb4d5;
+}
+
+.card img {
+    width: 150px;
+    border-radius: 50px;
+}
+
+.card h3 {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 18px;
+}
